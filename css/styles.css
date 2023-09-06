@@ -63,6 +63,11 @@ input[type=button], input[type=submit], input[type=reset] {
         display: flex;
         justify-content: center;
         align-items: center;
+        text-align: center;
+        
+        .forecast-card{
+            margin: 20px;
+        }
         
     }
 }

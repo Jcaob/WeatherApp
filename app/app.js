@@ -37,10 +37,12 @@ function initListeners() {
                 console.log(data)
                 let current = data.current
                 let forecast = data.forecast.forecastday
+                let location = data.location
                 console.log(current.condition.icon)
                 $(".current").append(`
                 <div class="current-card">
-                    <h1>${city}</h1>
+                    <h1>${location.name}</h1>
+                    <p>${location.country}</p>
                     <img src="${current.condition.icon}">
                     <h1>${current.temp_f}F</h1>
                     <p>Humidity: ${current.humidity} || Wind: ${current.wind_mph}</p>
@@ -59,7 +61,11 @@ function initListeners() {
                 </div>`)
                 })
             }).fail(function(e) {
-                console.log( "you have failed at getting data", e);
+                $(".current").html("")
+                $(".forecast").html("")
+                $(".current").append(`
+                <h1>That City does not Exist</h1>
+                `);
               })
         }
 
@@ -76,6 +82,7 @@ function initListeners() {
                 $(".current").append(`
                 <div class="current-card">
                     <h1>${location.name}</h1>
+                    <p>${location.country}</p>
                     <img src="${current.condition.icon}">
                     <h1>${current.temp_f}F</h1>
                     <p>Humidity: ${current.humidity} || Wind: ${current.wind_mph}</p>
@@ -94,7 +101,11 @@ function initListeners() {
                 </div>`)
                 })
             }).fail(function(e) {
-                console.log( "you have failed at getting data", e);
+                $(".current").html("")
+                $(".forecast").html("")
+                $(".current").append(`
+                <h1>That Zipcode does not Exist</h1>
+                `);
               })
         }
 
