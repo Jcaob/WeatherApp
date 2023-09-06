@@ -1,0 +1,68 @@
+{
+    "STUDENTS":[
+        {
+            "firstName": "Jacob",
+            "lastName":"Cata;an",
+            "address":"123",
+            "phone": "123",
+            "email": "1@gmail.com",
+            "classes": [
+                {
+                    "className": "Econ",
+                    "classNumber": "01"
+                },
+                {
+                    "className": "Stats",
+                    "classNumber": "02"
+                },
+                {
+                    "className": "Bio",
+                    "classNumber": "03"
+                }
+            ]
+        },
+        {
+            "firstName": "Mario",
+            "lastName":"Beni",
+            "address":"456",
+            "phone": "456",
+            "email": "2@gmail.com",
+            "classes": [
+                {
+                    "className": "Bio",
+                    "classNumber": "03"
+                },
+                {
+                    "className": "English",
+                    "classNumber": "05"
+                },
+                {
+                    "className": "Math",
+                    "classNumber": "06"
+                }
+            ]
+        },
+        {
+            "firstName": "Ren",
+            "lastName":"Jolrand",
+            "address":"789",
+            "phone": "789",
+            "email": "3@gmail.com",
+            "classes": [
+                {
+                    "className": "Stats",
+                    "classNumber": "02"
+                },
+                {
+                    "className": "Bio",
+                    "classNumber": "03"
+                },
+                {
+                    "className": "Math",
+                    "classNumber": "06"
+                }
+            ]
+        }
+       
+    ]
+}
