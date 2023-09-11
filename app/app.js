@@ -1,4 +1,4 @@
-const baseURL = `http://api.weatherapi.com/v1/forecast.json?key=`
+const baseURL = `https://api.weatherapi.com/v1/forecast.json?key=`
 const apikey = `1853ae2cd91045efb24204748232808`
 //https://api.weatherapi.com/v1/forecast.json?key=1853ae2cd91045efb24204748232808&q=46112&days=4&aqi=no&alerts=no
 /**
